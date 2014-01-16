@@ -1,0 +1,5 @@
+<%- node[:automongobackup][:config].to_hash.keys.sort.each do |key| %>
+  <%- if not node[:automongobackup][:config][key].nil? %>
+<%= key.to_s.upcase %>=<%= node[:automongobackup][:config][key].inspect %>
+  <% end %>
+<%- end %>
