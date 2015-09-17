@@ -24,8 +24,8 @@ if platform_family?("rhel")
 end
 
 remote_file "/usr/local/bin/automongobackup" do
-  source "https://raw.github.com/micahwedemeyer/automongobackup/7bc8b068fa75c970234b2b8b9843acaadfa52ac8/src/automongobackup.sh"
-  checksum "224ae4b8798e84ba35a48f2ae5acf7b3f97261c68562c80daeeb8f082c76e3db"
+  source "https://raw.githubusercontent.com/david-harrison/automongobackup/600d36050c84c442ba99e6450457040bc0b7a2ef/src/automongobackup.sh"
+  checksum "897148bb9193e863c5a0db3867b1098a6bc486cff9b1536449794519fd86af5d"
   owner "root"
   group "root"
   mode "0755"
